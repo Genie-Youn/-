@@ -1,8 +1,8 @@
-    /** 
-	 * 데이터내의 '<', '>' 를 '&lt;','$gt;'로 치환한다.
-	 * @parms obj : 대상객체, key : 치환할 속성명, done : 완료시 callBack 함수, parms : callback 함수의 파라미터
-     * @author : genie
-	 */
+       /** 
+	* 데이터내의 '<', '>' 를 '&lt;','$gt;'로 치환한다.
+	* @parms obj : 대상객체, key : 치환할 속성명, done : 완료시 callBack 함수, parms : callback 함수의 파라미터
+        * @author : genie
+	*/
 	function convertEscape(obj, key ,done, parms){
 		for(var i in obj){
 			obj[i][key] = String(obj[i][key]).replace(/</gi, '&lt;');
@@ -15,7 +15,7 @@
 		}
 	}
 
-    /** 
+       /** 
 	*   카카오링크 구현
 	*   2016.04.14
 	*   지니
