@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/mobile-coupon-style.css">
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="/admin/send/js/mobile-num-coupon.js"></script>
+<title>숫자 쿠폰</title>
+</head>
+<body>
+	<div class="header">
+		<a class="coupon-header"><img id="list-btn" alt="목록" src="css/images/list.png"></a>
+		<p>숫자 쿠폰 발급 받기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+	</div>
+	<div class="content-wrapper" id="content-wrapper">
+		<div class="content" id="content">
+			<div class="row">
+				<div class="col-xs-12">
+					<span class="coupon-subtitle">쿠폰명</span>
+					<p class="coupon-title"></p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="sub-wrapper">
+						<span class="coupon-subtitle">쿠폰번호</span>
+						<p>
+							<input id="coupon1" type="text" value=""
+								class="form-control input-sm" readonly> - <input
+								id="coupon2" type="text" value="" class="form-control input-sm"
+								readonly> - <input id="coupon3" type="text" value=""
+								class="form-control input-sm" readonly> - <input
+								id="coupon4" type="text" value="" class="form-control input-sm"
+								readonly>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="empty_filler"></div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="sub-wrapper">
+						<span class="coupon-subtitle">사용기간</span>
+						<p class="date"></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="empty_filler"></div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="sub-wrapper">
+						<button id="coupon-btn" type="button"
+							class="btn btn-warning col-xs-12">사용확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>

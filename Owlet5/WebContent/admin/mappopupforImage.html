@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>이미지 삽입해 보거라.</title>
+
+<script src="js/external/jquery/jquery.js"></script>
+<script>
+	$(document).ready(function(){
+		
+		$('input[type=file]').change(function () {
+		    console.log(this.files[0].mozFullPath);
+		});
+		
+		$('#su_btn').bind('click', function(){
+			if($('.file-image-input').val() == ""){
+				alert("이미지 넣어 임마!");
+				return;
+			}
+			//document.form.file.select();        
+			//alert(document.selection.createRange().text);
+			//$('.file-image-input').get(0).select();
+			
+			//alert(document.selection.createRangeCollection()[0].text.toString() );
+			//alert(document.selection.createRange().text.toString());
+			
+			
+			
+			
+			console.log(window.opener);
+			//window.opener.getReturnValueImage('<img src="http://placehold.it/50x50" width="'+$('#lat').val()+'" height="'+$('#lon').val()+'">'
+					console.log("image setter called!");
+			window.opener.getReturnValueImage('<img src="'+$('.file-image-input').val()+'" width="'+$('#lat').val()+'" height="'+$('#lon').val()+'">'
+					,$('.file-image-input').get(0));
+			window.close();
+		});
+	});
+</script>
+</head>
+<body>
+
+	<form name='form'>
+		<input type="file" class="file-image-input" name='file' width="400px">
+		<br>
+		<input type="text" id="lat" value="100">
+		<br>
+		<input type="text" id="lon" value="100">
+		<p>
+		<input type="button" id="su_btn" value="삽입">	
+	</form>
+
+
+</body>
+</html>

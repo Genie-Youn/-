@@ -1,0 +1,153 @@
+@CHARSET "UTF-8";
+
+.color-container {
+	list-style:none;
+	width:360px;
+	overflow:hidden;
+	margin-top:7px;
+}
+
+.color-item, .color-items {
+	float:left;
+	width:30px;
+	height:30px;
+	text-align:center;	
+}
+
+.color-item:hover {
+	border:1px solid white;
+	cursor:pointer;
+}
+
+.color-item.color-selected {
+	border:1px dotted white;
+}
+
+.cgray {
+	background-color: #dbdbdb;
+}
+.cyellow {
+	background-color: #ffc80e;
+}
+.cpink {
+	background-color: #ffb4bf;
+}
+.cgreen {
+	background-color: #00C643;
+}
+.csky {
+	background-color: #16A9C4;
+}
+
+.cblue {
+	background-color: #0981DC;
+}
+
+.cpurple {
+	background-color: #a87dab;
+}
+.credorange {
+	background-color: #EA5754;
+}
+.corange {
+	background-color: #EE6F3A;
+}
+.cred {
+	background-color: #E43D38;
+}
+.colive {
+	background-color: #a2c06b;
+}
+
+.mobile-locator {
+	clear:both;
+	width:380px;
+	height:460px;
+	/* border : 1px solid yellow; */
+	background: url('/res/img/adder/iphone.png') no-repeat center center;
+	background-size:contain;
+	position:relative;
+	margin-top:10px;
+	margin-left:-22px;
+}
+
+.skin-list p {
+	font-size: 12px;
+	text-align: center;
+}
+
+.skin-list b{
+	font-size:16px;
+}
+
+.mobile-locator .viewport-div {
+	/* position:absolute;
+	top:70px;
+	left:67px;
+	width:251px;
+	height:343px;
+	border:1px solid red; */
+	position:absolute;
+	top:14%;
+	left:18%;
+	width:61%;
+	height:69%;
+	/* border:1px solid red; */
+}
+
+.viewport-div .background-element {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	background-color:#888;
+	border:1px solid #888;
+}
+
+.viewport-div .menu-element {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:10%;
+	background-color:#f00;
+	border:1px solid #888;
+	border-bottom:0px;
+}
+
+.partion-of-configset {
+	list-style:none;
+	width:100%;
+}
+
+.partion-of-configset > li {
+	float:left;
+	margin-left:60px;
+	margin-right:20px;
+}
+
+.partion-of-configset > li > div{
+	display:inline-block;
+}
+
+.file-intro-input {
+	width:360px;
+	height:25px;
+	margin-top:13px;
+}
+
+.skin-top-header {
+	width: 100%;
+	text-align: center;
+	height: 60px;
+	display:table;
+}
+
+.skin-top-header p{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}

@@ -1,0 +1,105 @@
+@CHARSET "UTF-8";
+
+#image{
+	margin-top: 20px;
+}
+
+#edit_image {
+	text-align:center;
+	margin-top:10px;
+	height:250px;
+	background-color: #D0DEB2;
+}
+
+.display-none {
+	display: none;
+}
+
+#thumbnail{
+	width:auto;
+	height:250px;
+}
+
+.modern {
+	font-family: '나눔고딕', NanumGothic, '돋움', Dotum, AppleGothic, sans-serif;
+	display: inline-block;
+	font-weight: bold;
+	/* margin: 10px;*/
+	padding: 8px 15px;
+	background:#599be5;
+	border: 1px solid rgba(0,0,0,0.15);
+	border-radius: 4px;
+	transition: all 0.3s ease-out;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0,0,0,0.3), 0 0 4px 1px rgba(0,0,0,0.2);
+	/* Font styles */
+	text-decoration: none;
+	color:white;
+}
+.modern:hover {
+	background: #124072;
+}
+
+ .textbox { 
+    border: 1px solid #c4c4c4;  
+    font-size: 13px; 
+    padding: 4px 4px 4px 4px; 
+    border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    -webkit-border-radius: 4px; 
+    box-shadow: 0px 0px 8px #d9d9d9; 
+    -moz-box-shadow: 0px 0px 8px #d9d9d9; 
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+    margin-left:10px;
+    margin-right:10px;
+} 
+ 
+.textbox:focus { 
+    outline: none; 
+    border: 1px solid #7bc1f7; 
+    box-shadow: 0px 0px 8px #7bc1f7; 
+    -moz-box-shadow: 0px 0px 8px #7bc1f7; 
+    -webkit-box-shadow: 0px 0px 8px #7bc1f7; 
+} 
+
+#button_area{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.coupon_name{
+	margin-bottom:20px;
+	margin-left:60px;
+}
+
+.coupon_radio{
+	margin-left:10px;
+}
+
+.coupon_date{
+	margin-top:20px;
+	margin-bottom: 20px;
+	margin-left:75px;
+}
+
+.coupon_pop{
+	margin-bottom: 20px;
+	margin-left:37px;
+}
+
+.coupon_count{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.coupon_alarm{
+	margin-left:37px;
+}
+
+.warning-text {
+	color:red;
+}
+
+.warning-hide {
+	display:none;	
+}

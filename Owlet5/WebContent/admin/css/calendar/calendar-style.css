@@ -1,0 +1,50 @@
+@CHARSET "UTF-8";
+
+#dialog_form {
+	width:120px;
+	border:1px dashed #000;
+	background-color: white;
+	display: none;
+	overflow:hidden;
+	z-index:100;
+	text-align:center;
+}
+
+#dialog_form > h3 {
+	font-size:15px;
+	margin:8px 0px;
+}
+
+#dialog_form  button {
+	width:100%;
+	float:left;
+	background-color: rgb(151, 219, 255);
+}
+
+#dialog_form  button:hover {
+	width:100%;
+	float:left;
+	background-color: rgb(255, 255, 255);
+}
+
+#dialog_form.out {
+	background-color: #d6edfc;
+}
+
+#dialog_form.in{
+	background-color: #fc0;
+}
+
+.unvisible {
+	display:none;
+}
+
+.visible {
+	display:block;
+}
+
+#content_wrapper .delete-btn {
+	/* height:28px;
+	border:5	px solid #cccccc;
+	color: #7777777 !important; */
+}

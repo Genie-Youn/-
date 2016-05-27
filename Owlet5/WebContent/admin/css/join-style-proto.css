@@ -1,0 +1,392 @@
+* {
+	-webkit-text-size-adjust: none;
+	font-family: "NanumGothic";
+}
+
+body {
+	margin: 0 auto;
+	background-color: rgb(234, 238, 241);
+}
+
+form {
+	background-color: #ffffff;
+	border-radius: 6px;
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+}
+
+.jumbotron {
+	color: #fff;
+	background-color: rgb(89, 155, 229);
+	padding-top: 27px;
+	padding-bottom: 27px;
+}
+
+#welcome {
+	color: #fff;
+	background-color: rgb(89, 155, 229);
+	padding-top: 1px;
+	padding-bottom: 20px;
+}
+
+.jumbotron h1, .jumbotron .h1 {
+	font-size: 40px;
+}
+
+.jumbotron p {
+	margin-bottom: 15px;
+	font-size: 14px;
+	font-weight: inherit;
+}
+
+.container {
+	width: 550px;
+}
+
+.form-welcome {
+	background-color: #ffffff;
+	border-radius: 6px;
+	width: 100%;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	text-align: center;
+}
+
+/************************
+*
+* Header Wrapper
+*
+*************************/
+#header-wrapper {
+	width: 100%;
+	height: 100px;
+	left: 0px;
+	top: 0px;
+	background-color: #313546;
+	background-image: url('/res/img/owlet_logo_header.png');
+	background-repeat: no-repeat;
+	background-position: 550px 20px;
+	z-index: 1030;
+}
+
+#header-wrapper {
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	background-color: #313546;
+	z-index: 1030;
+}
+
+#main_header_wrapper {
+	width: 100%;
+	margin: 0 auto;
+	position: center;
+}
+
+.main-header {
+	
+}
+
+.btn {
+	width: 200px;
+	color: #ffffff;
+}
+
+/*********************************************************************************
+	
+	Footer Setting
+
+*********************************************************************************/
+#footer_wrapper {
+	clear: both;
+	margin: 0 auto;
+	padding-top: 0px;
+	width: 100%;
+	height: 100px;
+	background-color: #c8dc8c;
+	border-radius: 5px;
+	background: url('/res/img/icon/logo.png') no-repeat;
+	background-position: 550px 30px;
+}
+
+.footer-container li {
+	float: left;
+	font-weight: bold;
+}
+
+#main_footer {
+	height: 100px;
+	background-color: #313546;
+}
+
+#footer-ul-style {
+	
+}
+
+.footer-ul-style li {
+	display: inline-block;
+	margin: 0 25px;
+}
+
+.footer-ul-style li a {
+	color: #446DB2 !important;
+	font-size: 15px;
+	font-weight: bold !important;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif !important;
+	font-style: normal !important;
+	padding: 0 !important;
+}
+
+.footer-ul-style li a:hover {
+	color: #5BC4BE !important;
+}
+
+#main_copyright {
+	width: 55%;
+	padding-top: 15px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	margin-left: 710px;
+	text-align: left;
+	font-size: 100%;
+	color: rgb(99, 111, 127);
+}
+
+.customlabel {
+	width: 120px;
+	float: left;
+	padding-top: 7px;
+	margin-bottom: 0;
+	text-align: left;
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	display: inline-block;
+	max-width: 100%;
+	margin-left: 20px;
+}
+
+.textField {
+	width: 340px;
+	float: left;
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.textField-control {
+	display: block;
+	width: 100%;
+	height: 44px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s,
+}
+
+/*********************************************************************************
+	
+	Alcohol
+
+*********************************************************************************/
+div.notice_margin {
+	margin-top: -10px;
+}
+
+div.notice_msg {
+	text-align: left;
+}
+
+span.notice_msg {
+	font-size: 0.9em;
+	left: 0px;
+}
+
+div.icon {
+	position: relative;
+	float: right;
+	top: 10px;
+	left: -120px;
+}
+
+div.icon div {
+	position: absolute;
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 32px;
+	left: 0px;
+}
+
+div.icon-check {
+	background-image: url(../images/icons/icon-check.png);
+}
+
+div.icon-x {
+	background-image: url(../images/icons/icon-x.png);
+	left: -42px;
+}
+
+/*********************************************************************************
+	
+	Alcohol II
+
+*********************************************************************************/
+button.post_button {
+	float: left;
+	margin-right: 20px;
+}
+#postCode	{
+	position: relative;
+	display: inline-block;
+	height: 30px;
+	line-height: 25px;
+	margin-left: -170px;
+}
+
+
+textarea.address {
+	height: 75px;
+	resize: none;
+	overflow-y: auto;
+	overflow-x: none;
+}
+
+div.phone input.textField-control {
+	width: 80px;
+}
+
+div.phone input, div.phone div, div.phone select {
+	position: relative;
+	float: left;
+}
+
+div.phone select {
+	width: 80px;
+}
+
+div.phone div {
+	line-height: 40px;
+	height: 30px;
+	margin-left: 14.5px;
+	margin-right: 14.5px;
+}
+
+input[type=checkbox].phone {
+	float: left;
+	margin-right: -100px;
+	margin-top: 11px;
+}
+
+div.right	{
+	padding-right: 26px;
+}
+
+div.right * {
+	float: right;
+}
+
+div.right input[type=checkbox] {
+	margin-top: 12px;
+	margin-right: 7px;
+}
+
+div.right span {
+	font-size: 1.2em;
+	margin-top: 7px;
+}
+
+div.days {
+	height: 40px;
+	margin-top: -20px;
+	/*border: 1px solid black;*/
+}
+
+ul {
+	list-style: none;
+	padding-left: 0px;
+}
+
+ul.days li	{
+	cursor:pointer;
+	display: inline-block;
+	margin-top: 7px;
+	margin-bottom: 9px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 1px;
+	width: 24px;
+	height: 24px;
+	float: left;	
+}
+
+ul.days li.selected	{
+	background-color: #c8c8c8;
+	border-radius: 5px;
+}
+
+div.time {
+	margin-top: -20px;
+	padding-left: 23px; 
+}
+
+div.time label	{
+	font-size: 1.2em;
+}
+
+div.time label, div.time div, div.time select {
+	position: relative;
+	float: left;
+}
+
+div.time label	{
+	margin-top: 16px;
+	font-size: 1.2em;
+}
+
+div.time label.openLabel	{
+	margin-right: 33px;
+}
+
+div.time label.closeLabel	{
+	margin-right: 27px;
+}
+
+div.time select {
+	margin-top: 13px;
+	width: 100px;
+	height: 30px;
+}
+
+div.time div	{
+	height: 30px;
+	margin-left: 10px;
+}
+
+div.map_thumbnail	{
+	margin-left: 15px;
+	margin-right: 15px;
+	height: 200px;
+	width: 310px;
+	border: 1px solid #c8c8c8;
+	line-height: 195px;
+	text-align: center;
+}
+
+#file_upload	{
+	padding-top: 10px;
+}
+
+label.homepage_label	{
+	margin-top: -6px;
+}

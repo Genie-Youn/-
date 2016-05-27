@@ -1,0 +1,646 @@
+@CHARSET "UTF-8";
+/*****************************************************************
+
+	Interpolate space. 보간 부분입니다. 단지 외각을 없애요.
+
+*****************************************************************/
+
+
+a,a:focus, a:hover, a:active {
+    outline: 0;
+}
+
+/*****************************************************************
+
+	Color Class. 색상을 지정한 클래스들을 집결시켰어요.
+
+*****************************************************************/
+
+
+#summary_wrapper .summary-color-orange {
+    background: #f37b53;
+}
+
+#summary_wrapper .summary-color-yellow {
+    background: #FFB400;
+}
+
+#summary_wrapper .summary-color-blue {
+    background: #0DAED3;
+}
+
+#summary_wrapper .summary-color-green {
+    background: #74B749;/* #74B749; */
+}
+
+#summary_wrapper .summary-color-red {
+    background: #DE577B;/* #de577b; */
+}
+
+#summary_wrapper .summary-color-purple {
+    background:  #9D4A9C;/* #9d4a9c; */
+}
+#summary_wrapper .summary-color-grey {
+    background:  #77808a;
+}
+/*---new add--*/
+#summary_wrapper .summary-color-blue {
+    background:  #61b9ff;
+}
+#summary_wrapper .summary-color-green {
+    background:  #74B749;/* #00a489; */
+}
+#summary_wrapper .summary-color-terques {
+    background:  #0bc0cb;
+}
+#summary_wrapper .summary-color-purple {
+    background:  #9D4A9C;/* #847cc5; */
+}
+#summary_wrapper .summary-color-yellow {
+    background:  #e5bc64;
+}
+#summary_wrapper .summary-color-gray {
+    background:  #434343;
+}
+#summary_wrapper .summary-color-brown {
+    background:  #ab8465;
+}
+#summary_wrapper .summary-color-red {
+    background:  #DE577B;/* #b33062; */
+}
+#summary_wrapper .summary-color-olive {
+    background:  #959801;
+}
+#summary_wrapper .summary-color-deep-thistle {
+    background:  #9e7698;
+}
+
+#summary_wrapper div[class^='summary-unit summary-color'] {
+	background: transparent !important;
+}
+
+
+/*****************************************************************
+
+	Unit For Summary. 상위 5개의 요약본에 대한 스타일 지정 부분이에요.
+
+*****************************************************************/
+
+.summary-unit {
+	float:left;
+	/* border: 1px solid #fbc; */
+	border:0px;
+	outline:0px;
+	/*box-shadow: 2px 0px 2px rgba(150, 150, 150, 0.8); */
+}
+
+.summary-unit:nth-child(5) {
+	float:left;
+	/* border: 1px solid #fbc; */
+	border:0px;
+	outline:0px;
+	box-shadow: 0px 0px 0px rgba(150, 150, 150, 0.0);
+}
+
+i[class^='summary-icon-user-count'] {
+	width:88px;
+	height:88px;
+}
+
+.summary-icon-user-count {
+	background:url('/res/img/dash-icon/visit.png') no-repeat left center;
+}
+
+.summary-icon-user-count2 {
+	background:url('/res/img/dash-icon/total.png') no-repeat left center;
+}
+.summary-icon-user-count3 {
+  	background:url('/res/img/dash-icon/down.png') no-repeat left center;
+}
+.summary-icon-user-count4 {
+	background:url('/res/img/dash-icon/coupon.png') no-repeat left center;
+}
+.summary-icon-user-count5 {
+	background:url('/res/img/dash-icon/event.png') no-repeat left center;
+}
+
+.summary-icon-user-count:before {
+  background:url('/res/img/dash-icon/visit.png') no-repeat left center;
+}
+
+.summary-icon-user-count2:before {
+  background:url('/res/img/dash-icon/total.png') no-repeat left center;
+}
+.summary-icon-user-count3:before {
+  background:url('/res/img/dash-icon/down.png') no-repeat left center;
+}
+.summary-icon-user-count4:before {
+  background:url('/res/img/dash-icon/coupon.png') no-repeat left center;
+}
+.summary-icon-user-count5:before {
+  background:url('/res/img/dash-icon/event.png') no-repeat left center;
+}
+
+#summary_wrapper .summary-unit .status, 
+#summary_wrapper .summary-unit .tile-status {
+    background-color: transparent;
+    bottom: -10px;
+    font-size: 14px;
+    left: 10px;
+    min-height: 30px;
+    position: absolute;
+}
+
+#summary_wrapper .summary-unit {
+    color: #484848;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-weight: 300;
+    height:130px;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    margin-right:1px;
+    /* margin: 0 1.9% 1% 0; */
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    width: 19.3%;
+    z-index: 0;
+}
+
+
+#summary_wrapper .summary-unit i {
+    font-size: 50px;
+    margin-top: 7px;
+    display: inline-block;
+}
+
+#summary_wrapper .summary-unit:last-child {
+    margin-right: 0;
+}
+
+#summary_wrapper .summary-unit a {
+    color: #484848;
+    font-size: 64px;
+    font-weight: 400;
+    height: 90%;
+    line-height: 16px;
+    overflow: hidden;
+    padding: 5px 10px;
+    position: absolute;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    margin-top:10px;
+    width: 90%;
+    text-decoration: none;
+}
+
+#summary_wrapper .summary-unit a i {
+    transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+}
+
+#summary_wrapper .summary-unit a .info {
+    transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+}
+
+/****
+#summary_wrapper .summary-unit a:hover i {
+    transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    font-size: 140px;
+    opacity: 0.2;
+}**/
+
+/**
+#summary_wrapper .summary-unit a:hover .info {
+    transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    font-size: 50px;
+    opacity: 0.6;
+    -ms-transform: rotate(30deg); 
+}
+*/
+
+#summary_wrapper {
+	margin-top: -40px;
+}
+
+#summary_wrapper .summary-unit:hover {
+    opacity: 0.8;
+}
+
+#summary_wrapper .summary-unit .info {
+    font-size: 50px;
+    position: absolute;
+    right: 0px;
+    top: 45px;
+}
+
+
+/*****************************************************************
+
+	Elements for Chart Container. 차트를 넣을 외각 요소에 대한 부분이에요.
+
+*****************************************************************/
+/*****************************************************************
+
+	Unit For Chart Data. 차트 그릇의 구조를 설정해요.
+
+*****************************************************************/
+
+body {
+	line-height: 20px;
+}
+
+.content-structure-wrapper {
+	clear:both;
+	width:100%;
+}
+
+.row {
+	float:left;
+	border: 1px solid #043;	
+}
+
+.content-structure-wrapper:before,
+.content-structure-wrapper:after {
+	display:table;line-height:0;content:"";
+	margin-bottom:5px;
+}
+
+.content-structure-wrapper [class*="chart-slot"]{
+	display:block;
+	float:left;
+	width:100%;
+	min-height:30px;
+	margin-left:0.2%;/*2.564102564102564%;*/
+	*margin-left:2.5109110747408616%;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.content-structure-wrapper .chart-slot {
+	width:48.717948717948715%;
+	*width:48.664757228587014%;
+}
+
+.content-structure-wrapper .chart-slot-long {
+	width:97.26495726495726%;
+	*width:97.21176577559556%;
+}
+
+.content-structure-wrapper [class*="chart-slot"]:first-child {
+	margin-left:0;
+}
+
+
+@media (min-width: 1200px){
+
+.chart-widget {
+    background:#fff;
+    clear: both;
+    margin-bottom: 20px;
+    margin-top: 0;
+    border: 1px solid #404040;
+}
+}
+
+.slot-title {
+	/*line-height:20px;*/
+    background: #404040;
+    height: 36px;
+}
+
+
+.chart-widget.green {
+    border: 1px solid #74B749;
+}
+.chart-widget.green .slot-title {
+    background: #74B749;
+}
+
+.chart-widget.blue {
+    border: 1px solid #599BE5/* #4A8BC2; */
+}
+.chart-widget.blue .slot-title {
+    background: #599BE5/* #4A8BC2; */
+}
+
+.chart-widget.purple {
+    border: 1px solid #9D4A9C;
+}
+.chart-widget.purple .slot-title {
+    background: #9D4A9C;
+}
+
+.chart-widget.yellow {
+    border: 1px solid #FFB400;
+}
+.chart-widget.yellow .slot-title {
+    background: #FFB400;
+}
+
+.chart-widget.orange {
+    border: 1px solid #F37B53;
+}
+.chart-widget.orange .slot-title {
+    background: #F37B53;
+}
+
+.chart-widget.red {
+    border: 1px solid #DE577B;
+}
+.chart-widget.red .slot-title {
+    background: #DE577B;
+}
+
+
+.slot-title > h4 i {
+    font-size: 14px;
+    margin-right: 2px;
+}
+
+.slot-title > h4, .chats li.in .name {
+    color: #fff;
+}
+
+.slot-title span.tools {
+    float: right;
+    margin: 2px 0 0;
+    padding: 6px 5px 6px 10px;
+}
+
+.slot-title span.tools > a {
+    display: inline-block;
+    margin-right: 5px;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+[class^="slot-icon"],
+[class*=" slot-icon"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  margin-top: 0;
+}
+
+.slot-icon-down:before {
+  content: "▼";
+}
+
+.slot-icon:before {
+  content: "※";
+}
+
+.slot-icon.but-no-prefix:before {
+  content:  !important;
+  color:transparent;
+  font-size:1px;
+  margin-left:-10px;
+}
+
+.slot-icon-delete:before {
+  content: "Ｘ";
+}
+
+
+.icon-chevron-up { 
+	background-position:-288px -120px;
+}
+
+.icon-chevron-up:before {
+  content: "▲";
+}
+
+
+.slot-body {
+	display: block;
+    padding: 15px 15px;
+}
+
+.text-center {
+	text-align:center;
+	position:relative;
+}
+
+.text-center-no {
+}
+
+.slot-title > h4 {
+    float: left;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 11px 10px 15px;
+    line-height: 12px;
+    margin: 0;
+    /*font-family: 'MyriadPro-Regular';*/
+}
+
+[class*="chart-slot"] {
+	float:left;
+	min-height:1px;
+	margin-left:20px;
+}
+
+/*****************************************************************
+
+	Basic Info view Div style. 하단의 기본정보를 표현하기 위한 부분이에요.
+	(back 이 로고 부분입니다)
+
+*****************************************************************/
+
+#card {
+    -webkit-transform-style: preserve-3d; /* Chrome, Safari, Opera */
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    width: 100%;
+    height: 250px;
+    position: relative;
+}   
+
+.back, .front {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform .3s ease-in;
+    transition: transform .3s ease-in;
+    width: 100%;
+    height: 100%;   
+    /*padding: 20px;*/
+    font-family: Helvetica, Arial, sans-serif;
+    color: #fff;    
+    font-weight: bold;
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.4);
+    border-radius: 4px;
+    
+}
+
+.back {
+    -webkit-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg); /* IE 9 */
+    transform: rotateX(180deg);
+    overflow: hidden;
+     background: /* url('/res/img/darkdenim3.png'), */
+    			url('/res/img/comlogo.jpg') no-repeat center;
+    background-size: contain; */
+}   
+.front {
+    /*background: #7f37c2;*/
+	overflow:hidden;
+}
+
+.front:after, .front:before  {
+}
+
+#card-container {
+    display: inline-block;	
+    text-align: justify;
+    margin: 0 auto;
+    width:80%;
+}   
+#card-container:hover .back {   
+    -webkit-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg); /* IE 9 */
+    transform: rotateX(0deg);
+}
+#card-container:hover .front {      
+    -webkit-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg); /* IE 9 */
+    transform: rotateX(-180deg);
+}
+
+/*****************************************************************
+
+	Name Card Div style. 명함 내용 부분이에요.
+
+*****************************************************************/
+
+@import url(http://fonts.googleapis.com/css?family=The+Girl+Next+Door);
+
+#name_card {
+	/*width:450px;*/
+	/*height:250px;*/
+	height:100%;
+	background:transparent url('/res/img/namecardback.jpg')repeat bottom right;
+	padding:15px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.namecard-container {
+	background:url('/res/img/namecardfront.jpg');
+	width:100%;
+	height:100%;
+	font-family: 'Ubuntu', sans-serif;
+	/*color:#617D85;*/
+	color:#000;
+	text-shadow: 2px 2px 3px #fff;
+	opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+.namecard-name-slot {
+	/*font-family: 'The Girl Next Door', cursive;*/
+	font-size:48px;
+	margin:35px;
+	float:right;
+}
+
+.namecard-address-slot {
+	opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+	clear:both;
+	float:right;
+	/*font-family: 'Ubuntu', sans-serif;*/
+	font-size:40px;
+	margin:10px 35px 0 9px;
+}
+
+.namecard-contact-slot {
+	opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+	/*font-family: 'Ubuntu', sans-serif;*/
+	width:90%;
+	/*margin:195px 0 0 9px;*/
+	claer:both;
+	float:left;
+	padding:20px;
+	padding-top:60px;
+	font-size:15px;
+	word-wrap:break-word;
+	overflow:hidden;
+}
+
+.namecard-contact-slot ul {
+	list-style-type:none;
+}
+
+.namecard-background-slot {
+	opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+	/*background:transparent url(http://static.colourlovers.com/images/patternDefinitions/36/368/368247.png?1381699115)no-repeat center;*/
+	width:125px;
+	float:right;
+	margin:-219px 10px 0 0;
+	text-align:center;
+}
+
+.namecard-cutter-tl {
+	left:-7%;
+	top:-7%;
+	transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg); /* IE 9 */
+	-webkit-transform:rotate(-45deg); /* Opera, Chrome, and Safari */
+}
+
+.namecard-cutter-br {
+	left:88%;
+	top:88%;
+	transform:rotate(135deg);
+	-ms-transform:rotate(135deg); /* IE 9 */
+	-webkit-transform:rotate(135deg); /* Opera, Chrome, and Safari */
+}
+
+.namecard-cutter-br, .namecard-cutter-tl {
+	width:120px;
+	height:60px;
+	background-color: white;
+	position: absolute;
+	box-shadow: 0px 1px 0px #888888;
+}
+
+.namecard-size-restrict {
+	overflow: hidden; 
+	height:280px;
+}
+
+/**************************************************
+
+ 페이지 조횟수 테이블이 우측으로 가기 위한 위치 배당입니다.
+
+**************************************************/
+
+div.text-center-no #view_chart_div,
+div.text-center-no #table_view_div {
+	width: 47%;
+	display:inline-block;
+}

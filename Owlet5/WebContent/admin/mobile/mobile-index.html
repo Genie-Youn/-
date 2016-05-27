@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet"
+	href="/admin/mobile/css/jquery.mobile-1.4.4.min.css">
+<link rel="stylesheet" href="/admin/css/bootstrap.min.css">
+<link rel="stylesheet" href="/admin/mobile/css/mobile-index.css">
+
+<script src="/admin/mobile/js/jquery-1.11.1.min.js"></script>
+<script src="/admin/mobile/js/jquery.mobile-1.4.4.min.js"></script>
+<script src="/admin/mobile/js/mobile-index.js"></script>
+
+<script class="doksoft_maps_google"
+	src="http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places,weather"></script>
+<script class="doksoft_maps_google"
+	src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel_packed.js"></script>
+
+<title>Mobile frame page</title>
+</head>
+<body>
+	<div id="index" data-role="page">
+		<!-- 스플래시 div -->
+		<div id="splash"></div>
+		<!-- 스플래시 div 끝 -->
+		<div data-role='header'>
+			<h1 id="appName" data-backbtn="false" class="ui-icon-home ui-btn-icon-left">Owlet5</h1>
+		</div>
+		<iframe id='innerWindow' src="" data-get=""
+			frameborder="0"></iframe>		
+		<div data-role="navbar" data-iconpos="top" id="nav" class="ui-alt-icon">
+			<ul id="menuList">
+				<li><a href='#' data-icon="info" class="ui-btn-active"
+					data-href="" data-get="">업체소개</a></li>
+				<li><a href='#' data-icon="navigation" 
+					data-href="" data-get="" >오시는길</a></li>
+				<li><a href='#' data-icon="star"
+					data-href="" data-get="">쿠폰/행사</a></li>
+				<li><a href='#' data-icon="camera" 
+					data-href="" data-get="">앨범</a></li>
+				<li><a href='#' data-icon="grid" 
+					data-href="" data-get="">프레임</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

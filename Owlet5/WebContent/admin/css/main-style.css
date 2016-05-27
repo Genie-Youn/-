@@ -1,0 +1,346 @@
+/* * {
+	margin: 0; padding: 0;
+	font-size: 20px;
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%; height: 100%;
+	background-color: gray;
+} */
+
+/*
+	일단은 main.jsp의 레이아웃을 담당. 다른곳에도 적용?
+	janpro
+*/
+
+.wrapper {
+	width: 720px; height: 100%;
+	margin: 0 auto;
+	margin-top: 150px;
+}
+
+
+/* content wrapper */
+.content-wrapper {
+	width: calc(100% - 10px);
+	margin: 5px;
+	background-color: white;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+.half-width {
+	width: calc(50% - 10px);
+}
+
+.no-background {
+	background-color: transparent;
+}
+
+
+/* content head */
+.content-head {
+	padding-top: 10px;
+	width: 100%;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.content-head > div {
+	display: inline-block;
+	margin-right: 10px; margin-left: 10px;
+}
+
+.main-title {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.sub-title:before {
+	content: '| ';
+	margin-left: -20px;
+}
+
+.sub-title {
+	font-size: 0.6em;
+	color: #afb5bb;
+}
+
+.right {
+	position: absolute;
+	right: 5px; top: 10px;
+}
+
+.right div {
+	display: inline-block;
+	font-size: 0.75em;
+}
+
+b.emphasis {
+	font-size: 2em;
+	font-weight: normal;
+	color: #96b6fd;
+}
+
+/* content body */
+.content-body {
+	width: 100%; height: 100%;
+	padding: 20px; padding-top: 0;
+}
+
+
+/* button */
+.btn {
+	display: inline-block;
+	border-radius: 3px;
+	color: white;
+	padding: 5px;
+	font-size: 0.75em;
+	text-decoration: none;
+}
+
+.btn.gray {
+	background-color: #bec0cc;
+	border: 1px solid #acadb9;
+}
+
+.btn.lightblue {
+	background-color: #87abff;
+	border: 1px solid #7da1f5;
+}
+
+.btn.no-margin {
+	margin: 0;
+}
+
+/*
+	main.jsp의 summary 부분 css. 다른 페이지에서는 무용
+*/
+.summary-wrapper {
+	
+}
+
+.summary-unit:hover {
+    opacity: 0.8;
+}
+
+.summary-unit {
+	display: inline-block;
+	box-sizing: border-box;
+	width: calc(25% - 5px);
+	position: relative;
+}
+
+.summary-content {
+	display: inline-block;
+	margin-left: 80px; margin-top: 20px;
+}
+
+.summary-content .emphasis {
+	font-size: 1.7em;
+	//font-weight: 900;
+}
+
+a,a:focus, a:hover, a:active {
+    outline: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+i[class^='summary-icon-user-count'] {
+	width:88px;
+	height:88px;
+	display: inline-block;
+	position: absolute;
+}
+
+.summary-icon-user-count {
+	background:url('/res/img/dash-icon/visit.png') no-repeat left center;
+}
+.summary-icon-user-count2 {
+	background:url('/res/img/dash-icon/total.png') no-repeat left center;
+}
+.summary-icon-user-count3 {
+  	background:url('/res/img/dash-icon/down.png') no-repeat left center;
+}
+.summary-icon-user-count4 {
+	background:url('/res/img/dash-icon/coupon.png') no-repeat left center;
+}
+.summary-icon-user-count5 {
+	background:url('/res/img/dash-icon/event.png') no-repeat left center;
+}
+
+.summary-icon-user-count:before {
+  background:url('/res/img/dash-icon/visit.png') no-repeat left center;
+}
+.summary-icon-user-count2:before {
+  background:url('/res/img/dash-icon/total.png') no-repeat left center;
+}
+.summary-icon-user-count3:before {
+  background:url('/res/img/dash-icon/down.png') no-repeat left center;
+}
+.summary-icon-user-count4:before {
+  background:url('/res/img/dash-icon/coupon.png') no-repeat left center;
+}
+.summary-icon-user-count5:before {
+  background:url('/res/img/dash-icon/event.png') no-repeat left center;
+}
+
+/* 
+@CHARSET "UTF-8";
+****************************************************************
+
+	Interpolate space. 보간 부분입니다. 단지 외각을 없애요.
+
+****************************************************************
+
+
+a,a:focus, a:hover, a:active {
+    outline: 0;
+}
+
+****************************************************************
+
+	Unit For Summary. 상위 5개의 요약본에 대한 스타일 지정 부분이에요.
+
+****************************************************************
+
+.summary-unit {
+	float:left;
+	border: 1px solid #fbc;
+	border:0px;
+	outline:0px;
+	box-shadow: 2px 0px 2px rgba(150, 150, 150, 0.8);
+}
+
+.summary-unit:nth-child(5) {
+	float:left;
+	border: 1px solid #fbc;
+	border:0px;
+	outline:0px;
+	box-shadow: 0px 0px 0px rgba(150, 150, 150, 0.0);
+}
+
+i[class^='summary-icon-user-count'] {
+	width:88px;
+	height:88px;
+}
+
+.summary-icon-user-count {
+	background:url('/res/img/dash-icon/visit.png') no-repeat left center;
+}
+
+.summary-icon-user-count2 {
+	background:url('/res/img/dash-icon/total.png') no-repeat left center;
+}
+.summary-icon-user-count3 {
+  	background:url('/res/img/dash-icon/down.png') no-repeat left center;
+}
+.summary-icon-user-count4 {
+	background:url('/res/img/dash-icon/coupon.png') no-repeat left center;
+}
+.summary-icon-user-count5 {
+	background:url('/res/img/dash-icon/event.png') no-repeat left center;
+}
+
+.summary-icon-user-count:before {
+  background:url('/res/img/dash-icon/visit.png') no-repeat left center;
+}
+
+.summary-icon-user-count2:before {
+  background:url('/res/img/dash-icon/total.png') no-repeat left center;
+}
+.summary-icon-user-count3:before {
+  background:url('/res/img/dash-icon/down.png') no-repeat left center;
+}
+.summary-icon-user-count4:before {
+  background:url('/res/img/dash-icon/coupon.png') no-repeat left center;
+}
+.summary-icon-user-count5:before {
+  background:url('/res/img/dash-icon/event.png') no-repeat left center;
+}
+
+#summary_wrapper .summary-unit .status, 
+#summary_wrapper .summary-unit .tile-status {
+    background-color: transparent;
+    bottom: -10px;
+    font-size: 14px;
+    left: 10px;
+    min-height: 30px;
+    position: absolute;
+}
+
+#summary_wrapper .summary-unit {
+    color: #484848;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-weight: 300;
+    height:130px;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    margin-right:1px;
+    margin: 0 1.9% 1% 0;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    width: 19.3%;
+    z-index: 0;
+}
+
+
+#summary_wrapper .summary-unit i {
+    font-size: 50px;
+    margin-top: 7px;
+    display: inline-block;
+}
+
+#summary_wrapper .summary-unit:last-child {
+    margin-right: 0;
+}
+
+#summary_wrapper .summary-unit a {
+    color: #484848;
+    font-size: 64px;
+    font-weight: 400;
+    height: 90%;
+    line-height: 16px;
+    overflow: hidden;
+    padding: 5px 10px;
+    position: absolute;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    margin-top:10px;
+    width: 90%;
+    text-decoration: none;
+}
+
+#summary_wrapper .summary-unit a i {
+    transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+}
+
+#summary_wrapper .summary-unit a .info {
+    transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+}
+
+#summary_wrapper {
+	margin-top: -40px;
+}
+
+#summary_wrapper .summary-unit:hover {
+    opacity: 0.8;
+}
+
+#summary_wrapper .summary-unit .info {
+    font-size: 50px;
+    position: absolute;
+    right: 0px;
+    top: 45px;
+} */

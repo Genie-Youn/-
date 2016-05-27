@@ -1,0 +1,116 @@
+@CHARSET "UTF-8";
+
+.item-container {
+	border : 3px dashed #eee;
+	width:100%;
+	overflow:hidden;
+	min-height:100px;
+	margin-top:25px;
+}
+
+
+
+.item-slot {
+	position:relative;
+	float : left;
+	width:30%;
+	background-color: #FFFFCC;
+	background-image: url("../../../res/img/coupon.png");
+	background-size: contain;
+	background-repeat: no-repeat; 
+	height:180px;
+	margin: 10px;
+	border-radius: 25px;
+	-o-border-radius: 25px;
+	-ms-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	box-shadow: 1px 2px 10px #888888;
+	-o-box-shadow: 1px 2px 10px #888888;
+	-ms-box-shadow: 1px 2px 10px #888888;
+	-webkit-box-shadow: 1px 2px 10px #888888;
+	-moz-box-shadow: 1px 2px 10px #888888;
+	text-align: center;
+	overflow:hidden;
+}
+
+.item-slot:hover {
+	border-top-right-radius: 0px;
+	-o-border-top-right-radius: 0px;
+	-ms-border-top-right-radius: 0px;
+	-webkit-top-right-border-radius: 0px;
+	-moz-border-top-right-radius: 0px;
+	box-shadow: 0px 5px 20px #000;
+	-o-box-shadow: 0px 5px 20px #000;
+	-ms-box-shadow: 0px 5px 20px #000;
+	-webkit-box-shadow: 0px 5px 20px #000;
+	-moz-box-shadow: 0px 5px 20px #000;
+	background-color : #FFFFDD;
+	cursor:pointer;
+}
+
+.item-slot.selected {
+	background-color : #ffcc99;
+	/* box-shadow: 0px 5px 20px #cce5ff;
+	-o-box-shadow: 0px 5px 20px #cce5ff;
+	-ms-box-shadow: 0px 5px 20px #cce5ff;
+	-webkit-box-shadow: 0px 5px 20px #cce5ff;
+	-moz-box-shadow: 0px 5px 20px #cce5ff;
+ 	*/
+}
+
+.item-slot .x-btn {
+	/* float:right; */
+	position:absolute;
+	right:1px;
+	top:2px;
+	border-right:1px solid #994C00;
+	border-bottom:1px solid #994C00;
+	margin:2px 2px;
+	padding:0px 4px;
+	display:none;
+}
+
+.item-slot .x-btn:hover {
+	background-color : #ff9933;/* #FFCC99; */
+}
+
+.item-slot .title {
+	margin-top:10px;
+	width:100%;
+	padding:5px;
+	border-bottom:1px solid #c0c0c0;
+}
+
+.item-slot .start-date,
+.item-slot .end-date {
+	padding:5px;
+	display:inline-block;
+}
+
+.item-slot .content {
+	border-top:1px solid #c0c0c0;	
+	padding:5px;
+	/* border-bottom:1px solid #c0c0c0; */
+}
+
+.item-slot .values {
+	display:none;
+}
+
+.item-slot {
+	/* -webkit-transition: left 1s linear 2s; For Safari 3.1 to 6.0
+    transition: left 1s linear 2s; */
+}
+
+
+.warn-span {
+	color:red;
+	font-weight: bold;
+}
+
+.delete-all-btn, .delete-part-btn, .came-back-btn{
+	width: 100px;
+	height: 30px;
+	margin-top: 7px;
+}

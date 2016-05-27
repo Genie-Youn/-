@@ -1,0 +1,10 @@
+#content_wrapper {
+	overflow:hidden;
+	width: 900px;
+	padding-top:30px;
+	padding-bottom:30px;
+	margin:0 auto;
+	border: 1px solid #E7E6E6;
+	background-color:#FFF;
+	margin-top:60px;
+}

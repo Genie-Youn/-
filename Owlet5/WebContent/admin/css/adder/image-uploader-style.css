@@ -1,0 +1,349 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: NanumGothic;
+	src: url('/res/font/NanumGothic.woff');
+}
+
+/****************************************
+
+ Whole layout.
+
+****************************************/
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: NanumGothic;
+}
+
+#popup_wrapper {
+	width: 864px;
+	height: 651px;
+	border: 1px solid transparent;
+	position: relative;
+}
+
+div.panel {
+	display: inline-block;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+}
+
+.top-title {
+	color: #E6E6E6;
+	width: 862px;
+	height: 40px;
+	border: 1px solid transparent;
+	background-color: #333843;
+	vertical-align: middle;
+	line-height: 40px;
+}
+
+.top-subtitle {
+	width: 862px;
+	height: 45px;
+	border: 1px solid transparent;
+	background-color: #f8f8f8;
+}
+
+.left-picture-list-container {
+	width: 80px;
+	height: 515px;
+	border: 1px solid transparent;
+	background-color: #FAFAFA;
+	overflow-y: auto;
+	ovwrflow-x: hidden;
+}
+
+.main-container {
+	width: 575px;
+	height: 475px;
+	border: 1px solid transparent;
+	padding: 20px;
+	background-color: #D8D8D8;
+}
+
+.right-menu-container {
+	width: 163px;
+	height: 515px;
+	border: 1px solid transparent;
+	/* background-color:#585858; */
+	background-color: #fafafa;
+}
+
+.bottom-btn-container {
+	width: 862px;
+	height: 43px;
+	border: 1px solid transparent;
+	background-color: #f8f8f8;
+}
+
+/************************************************
+
+  Inner Element Styling.
+
+*************************************************/
+.pic-box {
+	width: 45px;
+	height: 45px;
+	background: url('http://placehold.it/45x45') center;
+	background-size: contain;
+	/* margin:0 auto; */
+	margin-left: 14px;
+	border: 1px solid #dbdbdb;
+}
+
+.pic-box:hover {
+	border: 1px solid #599be5;
+}
+
+.empty-box {
+	height: 45px;
+}
+
+.pic-slot-box {
+	border: 3px solid #747474;
+	width: 135px;
+	height: 135px;
+	margin: 1px;
+	position: absolute;
+	cursor: pointer;
+	background-color:#a4a4a4; 
+}
+
+.pic-slot-box:hover {
+	border: 3px solid #1e5975;
+}
+
+.pic-slot-selected {
+	border: 3px solid #0092e0 !important;
+}
+
+.pic-slot-box-wrapper {
+	text-align: center;
+	margin: 0 auto;
+	width: 429px;
+	height: 429px;
+	position: relative;
+	margin-top:20px;
+}
+
+.direct-selector {
+	width: 100%;
+	height: 50%;
+	border: 1px solid transparent;
+	position: relative;
+}
+
+.direct-selector p{
+	font-size:12px;
+	margin-top:10px;
+}
+
+.row-btn, .column-btn {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	border: 1px solid #323402;
+	margin: 0px auto;
+	margin-top: 6px;
+	line-height: 30px;
+	vertical-align: middle;
+}
+
+.row-btn:hover, .column-btn:hover {
+	border: 1px solid #599be5;
+	color: #599be5;
+}
+
+.row-btn-selected, .column-btn-selected {
+	border: 1px solid #1e5975;
+	background-color: #1e5975;
+	color: #eef;
+}
+
+.direct-hider, .template-hider {
+	position: absolute;
+	top: 20px;
+	width: 100%;
+	height: 90%;
+	background-color: rgba(23, 23, 23, 0.75);
+}
+
+.row-wrapper, .column-wrapper {
+	/* background-color:#585858; */
+	
+}
+
+.column-wrapper:after {
+	content: "&lt;br&gt;";
+	color: transparent;
+	height: 20px;
+}
+
+div.point-box {
+	width: 5px;
+	height: 5px;
+	border: 1px solid black;
+	background-color: white;
+	position: absolute;
+}
+
+div.point-box:hover {
+	width: 8px;
+	height: 8px;
+}
+
+.point-1 {
+	left: -5px;
+	bottom: -5px;
+	cursor: sw-resize;
+}
+
+.point-2 {
+	left: 50%;
+	bottom: -5px;
+	cursor: s-resize;
+}
+
+.point-3 {
+	right: -5px;
+	bottom: -5px;
+	cursor: se-resize;
+}
+
+.point-4 {
+	left: -5px;
+	bottom: 50%;
+	cursor: w-resize;
+}
+
+.point-6 {
+	right: -5px;
+	bottom: 50%;
+	cursor: e-resize;
+}
+
+.point-7 {
+	left: -5px;
+	top: -5px;
+	cursor: nw-resize;
+}
+
+.point-8 {
+	left: 50%;
+	top: -5px;
+	cursor: n-resize;
+}
+
+.point-9 {
+	right: -5px;
+	top: -5px;
+	cursor: ne-resize;
+}
+
+.inner-box {
+	display: inline-block;
+	width: 1000px;
+	height: 1000px;
+	background-color: rgba(24, 54, 45, 0.3);
+	position: absolute;
+	top: -500px;
+	left: -500px;
+}
+
+.virtual-box {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border: 3px solid black;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+}
+
+.remove-div-element {
+	overflow: visible;
+	color: #fff;
+	line-height: 10px;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	right: 0px;
+	top: 0px;
+	border: 1px solid #ddd;
+	z-index: 101;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pic-slot-box img {
+	width: 100%;
+	height: 100%;
+}
+
+.pic-box-selected {
+	border: 1px solid red;
+}
+/**************************************************************
+
+ Left's Image Alignment
+ 
+ *************************************************************/
+.pic-box .file-element, .file-element-multiple {
+	display: none;
+}
+
+.log-console {
+	overflow-y: auto;
+	position: relative;
+	height: 50%;
+	width: 100%;
+	text-align: justify;
+}
+
+.input-limit-size {
+	
+}
+
+.block-template {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 138px;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: none;
+}
+
+.ss-pan {
+	font-size: 12px;
+}
+
+/**************************************************************
+
+
+ 
+ *************************************************************/
+.btn-add-picture {
+	width: 100px;
+	height: 30px;
+	margin-top: 7px;
+}
+
+.btn-delete-picture {
+	width: 100px;
+	height: 30px;
+	margin-top: 7px;
+}
+
+.btn-selective-delete-picture {
+	width: 100px;
+	height: 30px;
+	margin-top: 7px;
+}
+
+.image-submit-btn {
+	width: 100px;
+	height: 30px;
+	margin-top: 7px;
+}

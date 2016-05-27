@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이미지 업로덥니다.</title>
+
+<link rel="stylesheet" href="./css/jquery-ui.min.css">
+<link rel="stylesheet" href="./css/adder/image-uploader-style.css">
+<link rel="shortcut icon" href="/res/img/picka.gif"/>
+
+<script src="./js/external/jquery/jquery.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/adder/image-uploader-script.js"></script>
+</head>
+<body>
+
+<div id="popup_wrapper">
+	<div class="top-title panel">
+		자네는 한 장에 5MB의 용량을 넘지 않는 확장자가 BMP, PNG, GIF, JPG만을 올릴 수 있어.
+	</div>
+	
+	<!-- 사진 등록, 삭제, 부분 삭제 인터페이스 -->
+	
+	<div class="top-subtitle panel">
+		<button class="btn-add-picture">사진추가</button>
+		<button class="btn-delete-picture">전체삭제</button>
+		<button class="btn-selective-delete-picture">선택삭제</button>
+	</div>
+	
+	
+	<!-- 좌측 이미지 등록 리스트 출력부 -->
+	
+	<div class="left-picture-list-container panel">
+		<div class="empty-box">
+			<input type="file" class="file-element-multiple" multiple>
+		</div>
+	
+		<div class="pic-box" data-index='1'>
+			<input type="file" class="file-element">
+		</div>
+		<div class="pic-box" data-index='2'>
+			<input type="file" class="file-element">
+		</div>
+		<div class="pic-box" data-index='3'>
+			<input type="file" class="file-element">
+		</div>
+		<div class="pic-box" data-index='4'>
+			<input type="file" class="file-element">
+		</div>
+		<div class="pic-box" data-index='5'>
+			<input type="file" class="file-element">
+		</div>
+		
+		<div class="pic-box" data-index='6'>
+			<input type="file" class="file-element">
+		</div>
+		<div class="pic-box" data-index='7'>
+			<input type="file" class="file-element">
+		</div>
+		<div class="pic-box" data-index='8'>
+			<input type="file" class="file-element">
+		</div>
+		<div class="pic-box" data-index='9'>
+			<input type="file" class="file-element">
+		</div>
+	</div>
+	
+	<!-- 중앙 이미지 배치부 -->
+	
+	<div class="main-container panel">
+		<div class="pic-slot-box-wrapper">
+		</div>
+	</div>
+	
+	<!-- 우측 행렬 크기 지정부 -->
+	
+	<div class="right-menu-container panel">
+		<div class="direct-selector">
+			<div class="row-wrapper">
+			줄 수:
+				<div class="row-btn" data-value='1'>1</div>
+				<div class="row-btn" data-value='2'>2</div>
+				<div class="row-btn row-btn-selected" data-value='3'>3</div>
+			</div>
+			<div class="column-wrapper">
+			열 수:
+				<div class="column-btn" data-value='1'>1</div>
+				<div class="column-btn" data-value='2'>2</div>
+				<div class="column-btn column-btn-selected" data-value='3'>3</div>
+			</div>
+		</div>
+		
+		<div class="log-console">
+	
+		</div>
+	</div>
+	
+	<!-- 하단 최종 등록부 -->
+	
+	<div class="bottom-btn-container panel">
+		<button class="image-submit-btn">준비되었다면 올리세요.</button>
+	</div>
+</div>
+
+</body>
+</html>

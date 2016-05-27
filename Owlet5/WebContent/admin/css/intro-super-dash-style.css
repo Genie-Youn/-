@@ -1,0 +1,96 @@
+@CHARSET "UTF-8";
+
+#content_wrapper {
+	width:900px;
+	margin-top:20px;
+	/** box-shadow: 0 5px 10px rgba(150, 150, 150, 0.8); **/
+	border-radius: 0px;	
+}
+
+#super-summar-wrapper {
+	width:900px;
+	height:128px;
+	overflow:hidden;
+	margin:0 auto;
+	border: 1px solid #E7E6E6;
+	background-color:#FFF;
+	/** box-shadow: 0 5px 10px rgba(150, 150, 150, 0.8); **/
+	margin-top:92px;
+}
+
+.text-center-no {
+	height:200px;
+}
+
+/**********************************************
+
+ Chart Customizing
+
+**********************************************/
+
+.headerRow {
+	text-align:center;
+	line-height:10px;
+}
+
+.headerRow span {
+}
+
+.headerRow td {
+}
+
+.headerRow td:hover {
+}
+
+.tableRow {
+	line-height:10px;
+	height:18px !important;
+	font-size:10px;
+}
+
+/* .tableRow td {
+	height:10px !important;
+	line-height:4px;
+	font-size:10px;
+}
+
+.tableRow tr {
+	line-height:4px;
+	height:10px;
+} */
+
+.oddTableRow {
+	line-height:10px;
+	height:18px;
+	font-size:10px;
+}
+
+/* .oddTableRow td {
+	line-height:4px;
+	height:10px;
+	font-size:10px;
+} */
+
+.hoverTableRow {
+}
+
+.selectedTableRow {
+}
+
+.selectedTableRow td {
+}
+
+/******************************************
+*
+* 강제 위치 고정. 레이아웃이 깨지 않는다면야.......
+*
+******************************************/
+
+.center-text-div {
+	position:absolute;
+	left:0px;
+	text-algin:center;
+	width:100%;
+	padding-right:220px;
+	top:90px;
+}

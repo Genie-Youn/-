@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TCP-통계 페이지.</title>
+
+<link rel="stylesheet" href="/admin/css/jquery-ui.min.css">
+<link rel="stylesheet" href="/admin/css/intro-menu-style.css">
+<link rel="stylesheet" href="/admin/css/statistic/statistic-position-locator.css">
+
+<script src="/admin/js/external/jquery/jquery.js"></script>
+<script src="/admin/js/jquery-ui.min.js"></script>
+<script src="/admin/js/intro-menu-style.js"></script>
+<script src="/admin/js/modernizr.custom.js"></script>
+<script src="/admin/js/common-url-requester.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+
+</head>
+<body>
+<div id="loading_icon_locator"></div>
+<div id="page_wrapper">
+
+
+	<!-- 상단 고정 부분 -->
+	
+	<div id="header-wrapper">
+	
+	
+		<!-- 로고를 표시합니다. -->
+		
+		
+		<div id="main_header_wrapper">
+			<header class="main-header">
+				<img id="main_logo" src="/res/img/leafowlet.gif" title="환영합니다.">
+				
+				
+				<section class="header_button">
+				<p class="mypage">
+					<button class="btn btn-1 btn-1c">myPage</button>
+					</p>
+				<p class="logout">
+					<button class="btn btn-1 btn-1c">logout</button>
+					</p>
+				</section>
+				
+				
+			</header>
+		</div>
+		
+		
+		<!-- 메뉴가 표현됩니다. -->
+		
+		
+		<div id="navigator_wrapper">
+			<nav id="navigator">
+				<div id="nav_frame" class="nav-frame">
+					<ul class="clearfix">
+						<li class="nav-button nav-btn-home">
+								<a href="#" class="a-home">
+								</a>
+						</li>
+						<li class="nav-button nav-btn-notice">
+								<a href="#" class="a-notice">
+								</a>
+						</li>
+						<li class="nav-button nav-btn-adder">
+								<a href="#" class="a-adder">
+								</a>
+						</li>
+						<li class="nav-button nav-btn-preview2">
+								<a href="#" class="a-preview">
+								</a>
+						</li>
+						<li class="nav-button nav-btn-stats focus">
+								<a href="#" class="a-stats">
+								</a>
+						</li>
+						<li class="nav-button nav-btn-logo">
+								<a href="#" class="a-logo">
+								</a>
+						</li>
+					</ul>
+					
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- 상단 고정 부분의 끝 -->
+	
+	
+	<!-- 상단 메뉴와 하단 컨텐츠의 여백을 설정하는 요소 -->
+	
+	<div id="main_empty_filler">
+	</div>
+	
+	<!-- 글 내용이 들어갑니다. -->
+	
+	<div id="content_wrapper">
+		<section id="main_section">
+				<div id="chart_slider">
+					
+					<div class="moving-slot slot2" data-chart-name="방문자/방문횟수"></div>
+					<div class="moving-slot slot3" data-chart-name="앱 다운로드"></div>
+					<!-- <div class="moving-slot slot4 selected-slot" data-chart-name="시간별 접속자 수"></div> -->
+					<div class="moving-slot slot4 selected-slot" data-chart-name="쿠폰 사용내역"></div>
+					<div class="moving-slot slot5" data-chart-name="페이지 조회수"></div>
+					<!-- <div class="moving-slot slot6" data-chart-name="쿠폰 사용내역"></div> -->
+					
+					<!--  -->
+					
+					<div class="gradient-hider"></div>
+					
+					<div class="slot-left-mover"></div>
+					<div class="slot-right-mover"></div>
+					
+					<div class="chart-title-container">쿠폰 사용내역</div>
+					<div class="chart-interface-container">
+					
+						<form name='dataSelector' method='post' action='#'>
+						<span class="datespan-viewer">
+							2012/202/20-2/202.32/323
+						</span>
+						<div class="calendar-locator">
+							<input type="text" class="from-date-input"> ~ <input type="text" class="to-date-input">
+						</div>
+							&nbsp;&nbsp;&nbsp;
+							<button class='date-span-btn'>기간</button>
+							<button class='date-span-btn'>일</button>
+							<button class='date-span-btn'>주</button>
+							<button class='date-span-btn'>월</button>
+						</form>
+					
+					</div>
+					
+					<div class="goto-mover-wrapper">
+						<div class="goto-mover move2"></div>
+						<div class="goto-mover move3"></div>
+						<div class="goto-mover move4 selected-goto-mover"></div>
+						<div class="goto-mover move5"></div>
+						<!-- <div class="goto-mover move6"></div> -->
+					</div>
+				
+			</div>
+			
+			<div id="table_viewer">
+			
+				<div class="chart"></div>
+			
+				<div class="table"></div>
+				
+				<div class="algebra"></div>
+			</div>
+			
+		</section>
+	</div>
+
+	<!-- 하단의 약관정보 표현 부 -->
+	
+	<div id="footer_wrapper">
+		<footer id="main_footer">
+			<div class="footer-container">
+				<ul id="footer-menu" class="footer-ul-style">
+					<li class=""><a href="#">Privacy</a></li>
+					<li class=""><a href="#">Terms</a></li>
+					<li class=""><a href="#">Advertise</a></li>
+					<li class=""><a href="#">Affiliates</a></li>
+					<li class=""><a href="#">Newsletter</a></li>
+					<li class=""><a href="#">About</a></li>
+					<li class=""><a href="#" rel="nofollow" title=""
+						target="_blank">Journal</a></li>
+					<li class=""><a href="#">Contact Us</a></li>
+				</ul>
+				
+				<div id="main_copyright">
+					Copyright &copy; 2014 Owlet CatVSDog. All Rights Reserved.<br>
+					CatVSDog is a popular web design incorporated studio and shop.
+				</div>
+			</div>
+		</footer>
+	</div>
+</div>
+<script src="/admin/js/statistic/statistic-table-requester.js"></script>
+</body>
+</html>

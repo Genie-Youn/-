@@ -1,0 +1,21 @@
+ @font-face {
+ 	font-family : "NanumGothic";
+    src : url("../NanumGothic.woff");
+}
+
+.nanum {font-size:13px;
+line-height:28px;
+font-family:'³ª´®°íµñ',NanumGothic,'µ¸¿ò',Dotum,AppleGothic,sans-serif;
+color:black;
+}
+
+#char_div{
+	width: 940px; 
+	height: 500px;
+}
+
+#container{
+	margin: auto;
+	width: 940px; 
+	height: 1000px;
+}

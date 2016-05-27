@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>팝업</title>
+</head>
+<script src="js/external/jquery/jquery.js"></script>
+<script>
+	$(document).ready(function(){
+		$('#su_btn').bind('click', function(){
+			//JSON.stringify(
+					
+			console.log(window.opener);
+			//window.opener.getReturnValue('<iframe src="https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d3162.2478512064686!2d127.026618!3d37.57278099999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!1i0!3e6!4m3!3m2!1d37.5729936!2d127.0269828!4m5!1s0x357ca34dcb2d2481%3A0xf41485619a12e4e6!2z7ISc7Jq47Yq567OE7IucIOuPmeuMgOusuOq1rCDsi6DshKTrj5kg7YyU64-E6rCV7IKw64yA66as7Jq07KCE!3m2!1d37.572781!2d127.026618!5e0!3m2!1sko!2skr!4v1408626999654" width="600" height="450" frameborder="0" style="border:0"></iframe>');
+			console.log("map function called!");
+			window.opener.getReturnValue('<iframe src="https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d3162.2478512064686!2d127.026618!3d37.57278099999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!1i0!3e6!4m3!3m2!1d37.5729936!2d127.0269828!4m5!1s0x357ca34dcb2d2481%3A0xf41485619a12e4e6!2z7ISc7Jq47Yq567OE7IucIOuPmeuMgOusuOq1rCDsi6DshKTrj5kg7YyU64-E6rCV7IKw64yA66as7Jq07KCE!3m2!1d37.572781!2d127.026618!5e0!3m2!1sko!2skr!4v1408626999654" width="'+$('#lat').val()+'" height="'+$('#lon').val()+'" frameborder="0" style="border:0px"></iframe><br>');
+			window.close();
+		});
+	});
+</script>
+<body>
+
+	<input id="lat" type="text" value="100"><br>
+	<input id="lon" type="text" value="100"><br>
+	지도는 선택하였다 치자.<br>
+	<img src="http://placehold.it/50x50">
+	<br>
+	<button id="su_btn">값전달</button>
+
+</body>
+</html>

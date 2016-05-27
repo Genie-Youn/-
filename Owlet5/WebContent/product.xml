@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Product 관리를 위한 프토토콜용 xml -->
+<resources>
+	<!-- XML 작성 Example -->
+	<product>
+		<name></name>
+		<kindName></kindName>
+		<kindCode></kindCode>
+	</product>
+
+<../../resources>

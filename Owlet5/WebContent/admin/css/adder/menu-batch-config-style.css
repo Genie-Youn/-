@@ -1,0 +1,43 @@
+@CHARSET "UTF-8";
+
+.slot-wrapper {
+	position:absolute;
+	bottom:0px;
+	height:12%;
+	width:100%;
+}
+
+.rect-slot {
+	float:left;
+	display:inline-block;
+	border:1px dashed white;
+	background-color:#7aaac0;
+	color:white;
+	width:20%;
+	height:100%;
+	vertical-align : middle;
+	text-align:center;
+	line-height:400%;
+	white-space: pre;
+	overflow:hidden;
+}
+
+.slot-wrapper:hover {
+}
+
+
+.text-viewer {
+	color:white;
+	font-size:32px;
+}
+
+
+.rect-slot:hover {
+	background-color:#00b2ba;
+}
+
+.rect-slot-highlight {
+	border:2px solid white;
+	background-color: #d4efef;
+	color:black;
+}

@@ -1,0 +1,106 @@
+/* html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+	margin-bottom: 200px;
+} */
+/*********************************************************************************
+	
+	Navigator( Menu Setting ).
+
+*********************************************************************************/
+/* Navigator Setting Overriding */
+#navigator_wrapper {
+	background-color: #313546;
+}
+
+.nav_frame {
+	width: 900px;
+	margin: 15px auto 0 auto;
+}
+
+/* new */
+
+/*********************************************************************************
+	
+	Header Setting
+
+*********************************************************************************/
+/* Header Setting Overriding */
+#header-wrapper {
+	background-color: #5263ae;
+}
+
+.btn {
+	color: rgb(255, 255, 255);
+	background-color: rgba(83, 99, 174, 1); /* #D9FC6A; */
+	border-color: #fff;
+	border-style: solid;
+}
+
+.btn-1 {
+	
+}
+
+/* new */
+
+/*********************************************************************************
+	
+	Footer Setting
+
+*********************************************************************************/
+/* Footer Setting Overriding */
+#footer_wrapper {
+	background-color: #313546;
+}
+
+.footer-ul-style li a {
+	color: #5b6c92 !important;
+	font-size: 14px;
+}
+
+/*********************************************************************************
+	
+	Content Setting
+
+*********************************************************************************/
+/* Content Setting Overriding */
+
+/* new */
+
+/*********************************************************************************
+	
+	Bootstrap
+
+*********************************************************************************/
+/* Bootstrap Overriding */
+.nav-pills>li>a {
+	border-radius: 0px;
+	color: rgb(99, 111, 127);
+}
+
+#menu-unabled {
+	border-radius: 0px;
+	color: rgb(99, 111, 127);
+}
+
+.nav-pills>li {
+	border-left: 1px solid #313546;
+}
+
+.nav-pills>li:last-child {
+	border-right: 1px solid #313546;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+	text-decoration: none;
+	background-color: #5263ae;
+	color: #fff;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus
+	{
+	color: #fff;
+	background-color: #313546;
+}

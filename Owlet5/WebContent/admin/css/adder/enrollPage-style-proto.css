@@ -1,0 +1,23 @@
+#editor_wrapper {
+	width: 46.54%;
+	left: 0%;
+	background: #ffffff;
+	background-size: inherit;
+}
+
+
+.form-delimiter {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-top: 1px solid #c7c9ce;
+}
+
+.option-wrapper {
+	padding: 15px;
+}
+
+.sub-title {
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 1.1em;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>listview demo</title>
+		<link rel="stylesheet" href="//code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+  		<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+  		<script src="//code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+  		<script src="/admin/js/test.js"></script>
+	</head>
+
+	<body>
+		<!--first page -->
+	<div data-role="page" id="info-page">
+    	<div data-role="header" data-theme="b">
+        	 <h1> Information</h1>
+   		 </div>
+    	<div data-role="content">
+       		 <ul data-role="listview" id="prof-list" data-divider-theme="a" data-inset="true">
+         	   <li data-role="list-divider" data-theme="b" role="heading">Names</li>
+       		 </ul>
+   		</div>
+	</div>
+	<!--second page -->
+	<div data-role="page" id="details-page">
+    	<div data-role="header" data-theme="b"><a href="#" data-rel="back" data-role="button">Go back</a>
+	         <h1>Employee Details</h1>
+	    </div>
+	<div data-role="content"></div>
+	</div>
+	</body>
+</html>

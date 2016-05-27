@@ -1,0 +1,38 @@
+* {
+	-webkit-text-size-adjust: none;
+}
+
+body {
+	background-color: rgb(222,222,222);
+}
+
+form {
+	background-color: #ffffff;
+	border-radius: 6px;
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+}
+
+.jumbotron {
+	color: #fff;
+	background-color: rgb(89,155,229);
+	padding-top: 27px;
+	padding-bottom: 27px;
+}
+
+.jumbotron h1, .jumbotron .h1 {
+	font-size: 40px;
+}
+
+.jumbotron p {
+	margin-bottom: 15px;
+	font-size: 14px;
+	font-weight: inherit;
+}
+
+.container {
+	width: 900px;
+	margin: 0 auto;
+	padding: 30px;
+}

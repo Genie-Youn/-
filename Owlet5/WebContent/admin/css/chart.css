@@ -1,0 +1,18 @@
+/* chart */
+.c3 > svg {
+	overflow: visible !important;
+}
+
+.c3 text tspan {
+	font-size: 10px;
+	fill: #4b525d;
+}
+
+.tick line {
+	opacity: 0;
+}
+
+.c3-axis path {
+	stroke: #dae1e5;
+	stroke-width: 2px;
+}

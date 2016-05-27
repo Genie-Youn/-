@@ -1,0 +1,32 @@
+.c3-chart-arcs-title {
+	fill: skyblue;
+	font-size: 30px;
+	font-family:'�������',NanumGothic,'����',Dotum,AppleGothic,sans-serif;
+}
+
+.c3-axis path {
+	//fill: #ccd1d7;
+	stroke: #ccd1d7;
+	stroke-width: 2px;
+}
+
+.tick line {
+	opacity: 0;
+}
+
+.half-width {
+	width: 49%;
+	display: inline-block;
+}
+
+#pie-chart-frame {
+	width: 90%; height: 200px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f8f8fa;
+	posiiton: absolute;
+}
+
+#pie-chart-left {
+	width: 130px;
+}

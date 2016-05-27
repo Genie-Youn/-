@@ -1,0 +1,333 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: '맑은고딕', 'Malgun Gothic', Gothic, sans-serif;
+}
+
+body { 
+	width: 1280px;
+	margin: 0 auto;
+	background: rgb(255,255,255);
+}
+
+#body-wrapper {
+	width:330px;
+	background: rgb(247,249,250);
+	padding: 20px 40px;
+	/**border-radius: 10px;**/
+	/**box-shadow: 0 5px 10px rgba(70, 70, 20, 0.3);**/
+	position: relative;
+	left: 35%;
+	top: 10%;
+	
+}
+
+#top-text {
+	font-size: 24px;
+	color: #5555ff;
+}
+
+.invalid {
+	border: 1px solid #dd4444;
+}
+
+.valid {
+	border: 1px solid #44dd44;
+}
+
+.invalid:focus {
+	border-color: rgba(255, 0, 0, 0.8);
+	outline: 0;
+	box-shadow: inset 0 10px 10px rgba(250, 0, 0, 0.05);
+}
+
+.valid:focus {
+	border-color: rgba(0, 255, 0, 0.8);
+	outline: 0;
+	box-shadow: inset 0 10px 10px rgba(0, 250, 0, 0.05);
+}
+
+.field {
+	height: 40px;
+	width: 330px;
+	/*border-radius: 7px 7px 7px 7px;*/
+	/*outline:0;*/
+	padding-left:10px;
+	margin:0 auto;
+	margin-left:0px;
+	margin-bottom:5px;
+	font-size:18px;
+}
+
+.normal {
+	border: 1px solid rgb(216,229,228);
+}
+
+.normal:focus {
+	border-color: rgba(100, 100, 100, 0.8);
+	outline: 0;
+	box-shadow: inset 0 10px 10px rgba(50, 50, 50, 0.05);
+}
+
+#login {
+	/*width:80px;*/
+	margin-left:0px;
+	margin-top:10px;
+	width:340px;
+	height:40px;
+	/*padding: 0px 1px 5px 1px;*/
+	font-size:20px;
+	/**border-radius: 7px 7px 7px 7px;**/
+	/**background: -webkit-linear-gradient(#fff, #888); /* For Safari 5.1 to 6.0 */
+    /**background: -o-linear-gradient(#fff, #888); /* For Opera 11.1 to 12.0 */
+    /**background: -moz-linear-gradient(#fff, #888); /* For Firefox 3.6 to 15 */
+    /**background: linear-gradient(#fff, #888); /* Standard syntax (must be last) */
+    background: rgb(255,203,42);
+    color: #ffffff;
+    border:0px;
+}
+
+#login:hover {
+	background: -webkit-linear-gradient(#fff, #bbb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fff, #bbb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fff, #bbb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fff, #bbb); /* Standard syntax (must be last) */
+}
+
+#login:active {
+	background: -webkit-linear-gradient(#888, #fff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#888, #fff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#888, #fff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#888, #fff); /* Standard syntax (must be last)*/
+	/*border-color: rgba(10, 10, 10, 0.8);*/
+}
+
+#loginForm {
+	margin:0 auto;
+}
+
+#logoImg {
+	width:212px;
+	height:245px;
+	overflow:hidden;
+	margin:0 auto;
+	padding-left:0px;
+	padding-bottom:20px;
+	background: url('/res/img/owlet.png') no-repeat 0px 0px;
+}
+
+#console {
+	padding-left:10px;
+	color:red;
+	font-weight:bold;
+}
+
+#header-wrapper{
+	width:1280px;
+	left:0px;
+	top:0px;
+	background-color: rgb(196,241,172);
+	z-index: 1030;
+}
+
+#loginbtn{
+	position:absolute;
+	/*right:560px;*/
+}
+
+#joinbtn{
+	position:absolute;
+	/*right:450px;*/
+	/**margin-left:100px;*/
+	left:520px;
+}
+
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 0px 7px;
+	display: inline-block;
+	/* margin: 15px 15px; */
+	margin-top:20px;
+	margin-left:950px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 80%;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	width:80px;
+	height:35px;
+	background-color:rgba(255, 255, 255, 0)/* #D9FC6A; */
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-1 {
+	border: 1px solid rgb(255,255,255);
+	color: rgb(255,255,255);
+}
+
+
+.btn-1:hover,
+.btn-1:active {
+	border: 0px solid rgb(255,255,255);
+	background-color: #8fa9d8;
+}
+
+.btn-1:hover:after,
+.btn-1:active:after {
+	width: 100%;
+}
+
+/*********************************************************************************
+	
+	Header Setting
+
+*********************************************************************************/
+
+.main-header {
+}
+
+#header-wrapper {
+	width:100%;
+	height:80px;
+	left:0px;
+	top:0px;
+	background-color: #313546;
+	background-image:url('/res/img/owlet_logo_header.png');
+	background-repeat:no-repeat;
+	background-position: 180px 10px;
+	z-index: 1030;
+}
+
+#main_header_wrapper {
+	width:1280px;
+	margin:0 auto;
+	position: center;
+}
+
+#content{
+	width:1280px;
+	height:100%;
+	overflow:auto;
+}
+
+.login-web{
+	margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+	width:1280px;
+}
+
+.web-1{
+	background-image:url('/res/img/intro-01.png');
+	background-position: center center;
+	height:630px;
+}
+.web-2{
+	background-image:url('/res/img/intro-02.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	height:592px;
+}
+.web-3{
+	background-image:url('/res/img/intro-03.png');
+	background-position: center center;
+	height:592px;
+}
+.web-4{
+	background-image:url('/res/img/intro-04.png');
+	background-position: center center;
+	height:676px;
+}
+
+
+/*********************************************************************************
+	
+	Footer Setting
+
+*********************************************************************************/
+
+#footer_wrapper {
+	clear:both;
+	margin: 0 auto;
+	padding-top:0px;
+	width: 100%;
+	height: 100px;
+	background-color:#c8dc8c;
+	border-radius: 5px;
+	background: url('/res/img/icon/logo.png') no-repeat;	
+	background-position: 150px 30px;
+}
+
+.footer-container li {
+	float: left;
+	font-weight: bold;
+}
+
+#main_footer {
+	height: 100px;
+	background-color:#313546;
+}
+
+#footer-ul-style {
+	
+}
+
+.footer-ul-style li {
+	display: inline-block;
+	margin: 0 25px;
+}
+
+.footer-ul-style li a {
+	color: #446DB2 !important;
+	font-size: 15px;
+	font-weight: bold !important;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif !important;
+	font-style: normal !important;
+	padding: 0 !important;
+}
+
+.footer-ul-style li a:hover
+{
+	color: #5BC4BE !important;
+}
+
+#main_copyright {
+	width:55%;
+	padding-top:15px;
+	/**margin-top:50px;**/
+	margin-bottom:30px;
+	margin-left:300px;
+	text-align:left;
+	font-size: 100%;
+	color:rgb(99,111,127);
+}
+
+#loginDlg {
+	width:404px;
+	height:560px;
+	overflow:hidden;
+	margin:0 auto;
+	padding-left:0px;
+	padding-bottom:20px;
+	background: url('/res/img/bg_login.png') no-repeat 0px 0px;
+}

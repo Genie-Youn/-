@@ -1,0 +1,35 @@
+.draggable {
+	width: 90px;
+	height: 90px;
+	padding: 0.5em;
+	border: 0px;
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+#containment-wrapper {
+	width: 350px;
+	height: 600px;
+	border: 3px solid #ccc;
+	padding: 10px;
+	margin: auto;
+}
+
+.drag1 {
+	width: 80px;
+	height: 80px;
+	margin: auto;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+li {
+	margin: 5px;
+	padding: 5px;
+	width: 150px;
+}

@@ -1,0 +1,40 @@
+h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h1 .small, .h1 .small, h2 .small, .h2 .small, h3 .small, .h3 .small {
+	font-size: 50%;
+}
+
+#content_wrapper {
+	width: 900px;
+	margin:0 auto;
+	border: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color:#FFF;
+	border-radius: 10px;	
+	box-shadow: none;
+	margin-top:60px;
+	
+	border: 3px dashed #c9c6cb;
+}
+
+.content_empty_filter {
+	margin-top: 70px;
+}
+
+.headline_underline {
+	margin-top: 0px;
+	border-top: 1px solid #c6c5c8;
+}
+
+.coupon_button {
+	width: 128px;
+	height: 128px;
+	margin: 0 auto;
+	background-image: url(/res/img/test_coupon_btn.png);
+}
+
+.calendar_button {
+	width: 128px;
+	height: 128px;
+	margin: 0 auto;
+	background-image: url(/res/img/test_calendar_btn.png);
+}

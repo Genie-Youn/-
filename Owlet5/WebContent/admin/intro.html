@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>소상공인 소개 페이지</title>
+<link rel="stylesheet" type="text/css" href="./css/intro.css">
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+	<div class="nanum">
+		<div id="container">
+			<div id="header">
+				<a href="./stats.html">google통계</a>
+				<a href="./stats2.html">g.raphael통계</a>
+			</div>
+			<div id="content">
+				<table width="940px" height="500px" border="1" cellspacing="0"
+					cellpadding="3" bordercolor="#999999"
+					style="border-collapse: collapse;">
+					<tr>
+						<td rowspan=3 width="300px" id="con01"><script
+								src="./js/intro.js"></script>
+							<div id="edit_image"></div> <input type="file" name="file"
+							id="files" class="display-none"> <input id="browse-click"
+							type="button" value="EDIT" /> <input type="reset" class="button"
+							value="DELETE" /></td>
+						<td id="con02">상호명
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="text" name="name" size="50" />
+						</td>
+					</tr>
+					<tr>
+						<td id="con03">상호소개
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+							<textarea name="intro" rows="20" cols="45" wrap="hard" style="resize:none;"></textarea>
+
+						</td>
+					</tr>
+					<tr>
+						<td id="con04">웹페이지 주소 &nbsp; <input type="text" name="name"
+							size="50" /></td>
+					</tr>
+					<tr>
+						<td colspan="2" id="con05"><input type="button"
+							class="button" value="저장하기" /></td>
+					</tr>
+
+				</table>
+
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>

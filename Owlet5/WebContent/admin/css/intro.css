@@ -1,0 +1,82 @@
+ @font-face {
+ 	font-family : "NanumGothic";
+    src : url("../NanumGothic.woff");
+}
+
+.nanum {font-size:13px;
+line-height:28px;
+font-family:'³ª´®°íµñ',NanumGothic,'µ¸¿ò',Dotum,AppleGothic,sans-serif;
+color:black;
+}
+
+#container{
+	margin: auto;
+	width: 940px; 
+	height: 1000px;
+}
+
+#content{
+}
+#con01{
+	text-align: center;
+}
+#con02{
+	text-align: center;
+}	
+#con03{
+	text-align: center;
+}
+#con04{
+	text-align: center;
+}
+
+#con05{
+	text-align: center;	
+}
+
+#edit_image{
+	font-family:'³ª´®°íµñ',NanumGothic,'µ¸¿ò',Dotum,AppleGothic,sans-serif;
+	width: 200;
+	height: 200;
+	background-color: #778899;
+	margin-left: 130;
+	margin-top: 20;
+	padding-left: 10;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.button{
+	font-family:'³ª´®°íµñ',NanumGothic,'µ¸¿ò',Dotum,AppleGothic,sans-serif;
+	margin-left: 300;
+	background-color:gray;
+	border: 0;
+	color: white;
+}
+
+#browse-click{
+	font-family:'³ª´®°íµñ',NanumGothic,'µ¸¿ò',Dotum,AppleGothic,sans-serif;
+	margin-left: 300;
+	background-color:gray;
+	border: 0;
+	color: white;
+}
+
+#browse-click:hover{
+	font-family:'³ª´®°íµñ',NanumGothic,'µ¸¿ò',Dotum,AppleGothic,sans-serif;
+	background-image: -webkit-linear-gradient(bottom, rgba(95,116,232,0.53) 0%, #859bef 100%);
+	background-image: -moz-linear-gradient(bottom, rgba(95,116,232,0.53) 0%, #859bef 100%);
+	background-image: -o-linear-gradient(bottom, rgba(95,116,232,0.53) 0%, #859bef 100%);
+	background-image: -ms-linear-gradient(bottom, rgba(95,116,232,0.53) 0%, #859bef 100%);
+	background-image: linear-gradient(bottom, rgba(95,116,232,0.53) 0%, #859bef 100%);
+
+	-webkit-box-shadow: inset 0px 1px 0px #aab9f4;
+	box-shadow: inset 0px 1px 0px #aab9f4;
+
+}
+
+.display-none
+{
+	display: none;
+}
